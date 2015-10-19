@@ -32,6 +32,10 @@ public class Lobbys implements Listener {
 			empfänger.remove(plugin.lobby2);
 			empfänger.remove(plugin.lobby3);
 			empfänger.remove(plugin.lobby4);
+			empfänger.remove(plugin.gamelobby1);
+			empfänger.remove(plugin.gamelobby2);
+
+			
 			
 			p.showPlayer((Player) plugin.lobby1);
 			
@@ -41,6 +45,11 @@ public class Lobbys implements Listener {
 				empfänger.remove(plugin.lobby1);
 				empfänger.remove(plugin.lobby3);
 				empfänger.remove(plugin.lobby4);
+				empfänger.remove(plugin.gamelobby1);
+				empfänger.remove(plugin.gamelobby2);
+
+				
+				
 				p.showPlayer((Player) plugin.lobby2);
 				
 			}else
@@ -49,6 +58,8 @@ public class Lobbys implements Listener {
 					empfänger.remove(plugin.lobby2);
 					empfänger.remove(plugin.lobby1);
 					empfänger.remove(plugin.lobby4);
+					empfänger.remove(plugin.gamelobby1);
+					empfänger.remove(plugin.gamelobby2);
 					p.showPlayer((Player) plugin.lobby3);
 					
 				}else
@@ -57,9 +68,24 @@ public class Lobbys implements Listener {
 						empfänger.remove(plugin.lobby2);
 						empfänger.remove(plugin.lobby3);
 						empfänger.remove(plugin.lobby1);
+						empfänger.remove(plugin.gamelobby1);
+						empfänger.remove(plugin.gamelobby2);
+						
 						p.showPlayer((Player) plugin.lobby4);
 						
-					}
+					}else
+						if(plugin.gamelobby1.contains(p.getName())){
+							
+							empfänger.remove(plugin.lobby1);
+							empfänger.remove(plugin.lobby2);
+							empfänger.remove(plugin.lobby3);
+							empfänger.remove(plugin.lobby4);
+							empfänger.remove(plugin.gamelobby2);
+							
+							p.showPlayer((Player) plugin.gamelobby1);
+							
+							
+						}
 		
 		
 		
