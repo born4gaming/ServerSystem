@@ -90,7 +90,7 @@ public class mainclass extends JavaPlugin implements Listener {
 	public static String sg = "[SurvivalGames]";
 	public static String info = "[Server-Info]";
 	
-	//==========[ArrayList]==========
+	//==========[ArrayList Lobby]==========
 	public static ArrayList<String> hidden1 = new ArrayList<String>();
 	public static ArrayList<String> hidden2 = new ArrayList<String>();
 	public static ArrayList<String> silent = new ArrayList<String>();
@@ -106,7 +106,14 @@ public class mainclass extends JavaPlugin implements Listener {
 	public static ArrayList<String> lobbye = new ArrayList<String>();
 	public static ArrayList<String> lobbyz = new ArrayList<String>();
     public static ArrayList<String> lobbyd = new ArrayList<String>();
-	//==========[String]==========
+ 
+    //==========[ArrayList GameLobby]==========
+    public static List<Player> gamelobby1 = new ArrayList<Player>();
+  	public static List<Player> gamelobby2 = new ArrayList<Player>();
+    
+    
+    
+    //==========[String]==========
 	public int timecount;
 	
 	public void onEnable(){
